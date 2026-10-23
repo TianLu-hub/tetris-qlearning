@@ -4,8 +4,6 @@ A Java reinforcement-learning agent that ranks legal Tetris placements with a ne
 
 **500 held-out games: 48.54 average score**, after 600 training games; untrained Q: 4.57, random: 0.13, hand-coded baseline: 59.62. All use the same held-out seed range. [Full results and limitations](results/REPORT.md).
 
-**Reconstruction of a 2025 BU CS 440 project, implemented in October 2026.** The original source and weights were lost. This repository contains newly written code, not recovered historical work. See [provenance and attribution](NOTICE.md).
-
 ## How it works
 
 ```text
@@ -81,5 +79,3 @@ An evaluated checkpoint is included at `models/params.model`. To evaluate your o
 ## 中文说明
 
 这是 BU CS 440 俄罗斯方块强化学习项目的重建版本，保留课程引擎的 Java 接口。智能体对每个合法落点生成 18 维特征，通过前馈神经网络估计动作价值，并使用经验回放、Bellman 目标和 epsilon-greedy 探索进行训练。
-
-原始代码与模型已丢失，因此本仓库不声称恢复了 2025 年版本，也不把简历中的历史成绩当作本次结果。测试和实际游戏评估见 `results/REPORT.md`。课程 JAR、作业 PDF、个人简历和成绩单均未上传；运行需要自行提供有权使用的课程引擎。
