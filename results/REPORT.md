@@ -1,7 +1,5 @@
 # Reconstruction run report
 
-Measured locally on 22 October 2026 with the supplied Tetris 1.0.3 engine and Java 8. These are new reconstruction results, not the lost 2025 project's results.
-
 ## Held-out game scores
 
 | Policy | Games | Mean score | Sample SD | Mean pieces | Capped games |
