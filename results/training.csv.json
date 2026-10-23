@@ -1,0 +1,27 @@
+{
+  "engine": "tetris-1.0.3",
+  "mode": "train",
+  "note": "validation seeds reused each cycle; final test must use separate evaluation seeds",
+  "options": {
+    "seed": "42",
+    "max-pieces": "1000",
+    "model": "params/q.model",
+    "csv": "results/training.csv",
+    "cycles": "30",
+    "games-per-cycle": "20",
+    "eval-games": "20",
+    "eval-seed": "1000042",
+    "replay-capacity": "10000",
+    "sample-size": "4000",
+    "epochs": "3",
+    "batch-size": "64",
+    "learning-rate": "0.001",
+    "gamma": "0.95",
+    "gradient-clip": "5",
+    "epsilon-start": "0.8",
+    "epsilon-end": "0.05",
+    "epsilon-decay": "200",
+    "games": "20",
+    "policy": "all"
+  }
+}

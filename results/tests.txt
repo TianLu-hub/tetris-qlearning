@@ -1,0 +1,29 @@
+Build passed.
+PASS empty board measurements
+PASS holes, heights, bumpiness, and hole depth
+PASS triangular well depth
+PASS line clears and eroded cells
+PASS hypothetical boards are immutable
+PASS hidden-row top-out precedes line clearing
+PASS invalid inputs fail explicitly
+PASS feature dimensions and normalization
+PASS epsilon decay and reward semantics
+PASS terminal and truncated Bellman targets
+PASS seeded initialization and checkpoint round trip
+  synthetic half-MSE 0.06199987 -> 0.00000294
+PASS optimizer learns a synthetic regression task
+PASS real seeded games reproduce scores and lengths
+  engine matched 1134 moves, 290 clears, 5 top-outs
+PASS afterstate matches the actual engine through line clears
+cycle=1 loss=23.41373 -> 16.95283 validation_score=4.000 pieces=40.0 replay=16
+cycle=2 loss=10.84981 -> 6.41799 validation_score=9.000 pieces=40.0 replay=16
+Saved final model: <temporary-test-directory>/run0.model
+Best validation checkpoint: <temporary-test-directory>/run0.best.model (cycle 2, mean score 9.0)
+Training metrics: <temporary-test-directory>/run0.csv
+cycle=1 loss=23.41373 -> 16.95283 validation_score=4.000 pieces=40.0 replay=16
+cycle=2 loss=10.84981 -> 6.41799 validation_score=9.000 pieces=40.0 replay=16
+Saved final model: <temporary-test-directory>/run1.model
+Best validation checkpoint: <temporary-test-directory>/run1.best.model (cycle 2, mean score 9.0)
+Training metrics: <temporary-test-directory>/run1.csv
+PASS training CLI bounds replay and reproduces checkpoint
+PASS 15 behavior tests

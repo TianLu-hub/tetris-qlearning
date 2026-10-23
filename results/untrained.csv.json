@@ -1,0 +1,27 @@
+{
+  "engine": "tetris-1.0.3",
+  "mode": "smoke",
+  "note": "untrained Q smoke test",
+  "options": {
+    "seed": "42",
+    "max-pieces": "1000",
+    "model": "params/untrained-not-saved.model",
+    "csv": "results/untrained.csv",
+    "cycles": "10",
+    "games-per-cycle": "10",
+    "eval-games": "10",
+    "eval-seed": "2000042",
+    "replay-capacity": "10000",
+    "sample-size": "4000",
+    "epochs": "3",
+    "batch-size": "64",
+    "learning-rate": "0.001",
+    "gamma": "0.95",
+    "gradient-clip": "5",
+    "epsilon-start": "0.8",
+    "epsilon-end": "0.05",
+    "epsilon-decay": "200",
+    "games": "500",
+    "policy": "q"
+  }
+}
